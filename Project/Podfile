@@ -1,7 +1,5 @@
-pod "AVTagTextView", :path => "../"
-
-target "Demo" do
-end
-
-target "DemoTests" do
+pod 'AVTagTextView', :path => '../'
+target :AVTagTextViewTests, :exclusive => true do
+    pod 'Kiwi/XCTest'
+    pod 'ReactiveCocoa'
 end

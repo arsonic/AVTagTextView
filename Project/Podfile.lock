@@ -1,0 +1,30 @@
+PODS:
+  - AVTagTextView (0.1.0):
+    - ReactiveCocoa
+  - Kiwi/ARC (2.2.2)
+  - Kiwi/NonARC (2.2.2)
+  - Kiwi/XCTest (2.2.2):
+    - Kiwi/ARC
+    - Kiwi/NonARC
+  - ReactiveCocoa (2.1.3):
+    - ReactiveCocoa/Core
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/Core (2.1.3):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.1.3)
+
+DEPENDENCIES:
+  - AVTagTextView (from `../`)
+  - Kiwi/XCTest
+  - ReactiveCocoa
+
+EXTERNAL SOURCES:
+  AVTagTextView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AVTagTextView: ac14f248f921cefd7a99cf2bd257a343fa01716e
+  Kiwi: 03539aeb004ccd42bdbc31253617b26364315df4
+  ReactiveCocoa: 0142b823f4737effe6100f9fbb0a43bdcb629aae
+
+COCOAPODS: 0.26.2
