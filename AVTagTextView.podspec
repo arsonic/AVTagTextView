@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { "Arsonic" => "vershinin.arseniy@gmail.com" }
   s.source       = { :git => "https://github.com/arsonic/AVTagTextView.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '6.0'
+  s.platform     = :ios, '6.1'
   s.requires_arc = true
 
   s.source_files = 'Classes'
