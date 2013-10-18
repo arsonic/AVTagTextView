@@ -56,7 +56,11 @@ To run the example project; clone the repo, and run `pod install` from the Proje
 ## Requirements
 
 + [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa). The category strongly relies on the capabilities of ReactiveCocoa library to react on the user's input and to properly handle the keyboard's hiding/showing notifications.
-+ iOS 6 or greater
++ iOS 6.1 or greater
+
+## Tests
+
+The project includes a [Kiwi](https://github.com/allending/Kiwi) spec that can be found in the Tests folder
 
 ## TODO
 
