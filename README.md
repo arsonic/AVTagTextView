@@ -16,6 +16,12 @@ it simply add the following line to your Podfile:
 
 Alternatively you can drop the "Classes" folder into your project that should have the [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) library installed
 
+Import the category int the wished file:
+
+```objc
+#import <AVTagTextView/UITextView+AVTagTextView.h>
+```
+
 ## Usage
 
 Assign the hashTagsDelegate property to the desired delegate and implement the tagsForQuery method:
