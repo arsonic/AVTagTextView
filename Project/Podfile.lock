@@ -23,8 +23,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AVTagTextView: ac14f248f921cefd7a99cf2bd257a343fa01716e
+  AVTagTextView: d7c4170cfcbf76b084990f75ea1d0a3dab1bafbd
   Kiwi: 03539aeb004ccd42bdbc31253617b26364315df4
   ReactiveCocoa: 0142b823f4737effe6100f9fbb0a43bdcb629aae
 
-COCOAPODS: 0.26.2
+COCOAPODS: 0.29.0

@@ -43,6 +43,13 @@
 @property (nonatomic, strong) UITableViewController<AVTagTableViewControllerProtocol> *hashTagsTableViewController;
 
 /**
+ * Parent view controller that will display the 
+ * hashTagsTableViewController. It must be the view controller
+ * where the AVTagTextView is displayed
+ */
+@property (nonatomic, weak) UIViewController *parentViewController;
+
+/**
  * The height of the displayed hash tags table view controller, 
  * measured from the bottom of the iDevice keyboard. Defaults 
  * to DEFAULT_TABLE_VIEW_HEIGHT
