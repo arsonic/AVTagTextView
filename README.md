@@ -3,7 +3,7 @@
 [![Version](http://cocoapod-badges.herokuapp.com/v/AVTagTextView/badge.png)](http://cocoadocs.org/docsets/AVTagTextView)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/AVTagTextView/badge.png)](http://cocoadocs.org/docsets/AVTagTextView)
 
-A category that adds an instragram-like hashtag choosing/listing capability to the UITextView.
+A category that adds an instragram-like hashtag choosing/listing capability to the ```UITextView```.
 
 ![Screencapture GIF](https://dl.dropboxusercontent.com/u/31058381/OpenSource/AVTagTextView/out.gif)
 
@@ -47,7 +47,14 @@ self.textView.hashTagsDelegate = self;
 }
 ```
 
-Hashtags, contained in the UITextView, can be accessed through its hashTags property:
+Set the view controller where the hashtag table view will be displayed. Usually
+it will be the view controller that adds the `UITextView`
+
+```objc
+self.textView.parentViewController = self;
+```
+
+Hashtags, contained in the `UITextView`, can be accessed through its hashTags property:
 
 ```objc
 self.textView.hashTags //returns an array of strings, corresponding to the hash tags, found in the UITextView's text
