@@ -29,6 +29,7 @@
     self.textView.delegate = self;
     self.textView.hashTagsDelegate = self;
     self.textView.hashTagsTableViewHeight = 120.;
+    self.textView.keyboardType = UIKeyboardTypeTwitter;
     //Provide a custom implementation of the hash tags table view (optional)
     //self.textView.hashTagsTableViewController = [AVCustomTagTableViewController new];
 }

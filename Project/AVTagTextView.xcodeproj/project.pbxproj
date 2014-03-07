@@ -23,6 +23,7 @@
 		2DF201041811E31B00BAB170 /* AVCustomTagTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF201021811E31B00BAB170 /* AVCustomTagTableViewController.m */; };
 		2DF201051811E31B00BAB170 /* AVCustomTagTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DF201031811E31B00BAB170 /* AVCustomTagTableViewController.xib */; };
 		2DF201071811E35500BAB170 /* AVTagTextViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF201061811E35500BAB170 /* AVTagTextViewSpec.m */; };
+		382BCD2E18C9DD5000F35CB3 /* AVMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382BCD2D18C9DD5000F35CB3 /* AVMainViewController.m */; };
 		4FF60A7CF38F49F1A53F12D7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8734AF505AF74CD9BF980484 /* libPods.a */; };
 		68CAA5FE50C74F6390AB2B00 /* libPods-AVTagTextViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DACF7587EEA47368BAFD0A5 /* libPods-AVTagTextViewTests.a */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,8 @@
 		2DF201021811E31B00BAB170 /* AVCustomTagTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCustomTagTableViewController.m; sourceTree = "<group>"; };
 		2DF201031811E31B00BAB170 /* AVCustomTagTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVCustomTagTableViewController.xib; sourceTree = "<group>"; };
 		2DF201061811E35500BAB170 /* AVTagTextViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AVTagTextViewSpec.m; path = ../../Tests/AVTagTextViewSpec.m; sourceTree = "<group>"; };
+		382BCD2C18C9DD5000F35CB3 /* AVMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVMainViewController.h; sourceTree = "<group>"; };
+		382BCD2D18C9DD5000F35CB3 /* AVMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVMainViewController.m; sourceTree = "<group>"; };
 		3CAF57F86D3B49F3BF0A0471 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		8734AF505AF74CD9BF980484 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DACF7587EEA47368BAFD0A5 /* libPods-AVTagTextViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AVTagTextViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +138,8 @@
 				2D4D932C1811DEBF00903297 /* AVAppDelegate.h */,
 				2D4D932D1811DEBF00903297 /* AVAppDelegate.m */,
 				2D4D932F1811DEBF00903297 /* Main.storyboard */,
+				382BCD2C18C9DD5000F35CB3 /* AVMainViewController.h */,
+				382BCD2D18C9DD5000F35CB3 /* AVMainViewController.m */,
 				2D4D93321811DEBF00903297 /* AVViewController.h */,
 				2D4D93331811DEBF00903297 /* AVViewController.m */,
 				2D4D93351811DEBF00903297 /* Images.xcassets */,
@@ -341,6 +346,7 @@
 				2DF201041811E31B00BAB170 /* AVCustomTagTableViewController.m in Sources */,
 				2D4D932A1811DEBF00903297 /* main.m in Sources */,
 				2D4D93341811DEBF00903297 /* AVViewController.m in Sources */,
+				382BCD2E18C9DD5000F35CB3 /* AVMainViewController.m in Sources */,
 				2D4D932E1811DEBF00903297 /* AVAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
