@@ -130,9 +130,7 @@ static const char *kHashTagsTableViewHeightKey = "hashTagsTableViewHeightKey";
     UITableViewController<AVTagTableViewControllerProtocol> *controller = self.hashTagsTableViewController;
     
     //Add the controller to the current root view controller if it hasn't been added anywhere so far
-    if(!controller.tableView.superview){
-//        UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
-        
+    if(!controller.tableView.superview){       
         [controller willMoveToParentViewController:self.parentViewController];
         [self.parentViewController.view addSubview:controller.view];
         [controller didMoveToParentViewController:self.parentViewController];
