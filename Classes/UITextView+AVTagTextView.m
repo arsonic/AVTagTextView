@@ -57,6 +57,20 @@ static const char *kHashTagsTableViewControllerKey = "hashTagsTableViewControlle
     return controller;
 }
 
+static const char *kParentViewControllerKey = "parentViewControllerKey";
+
+- (void)setParentViewController:(UIViewController *)parentViewController
+{
+    if (self.parentViewController != parentViewController) {
+        objc_setAssociatedObject(self, kParentViewControllerKey, parentViewController, OBJC_ASSOCIATION_ASSIGN);
+    }
+}
+
+- (UIViewController *)parentViewController
+{
+    return objc_getAssociatedObject(self, kParentViewControllerKey);
+}
+
 static const char *kHashTagsTableViewHeightKey = "hashTagsTableViewHeightKey";
 
 - (void)setHashTagsTableViewHeight:(CGFloat)hashTagsTableViewHeight{
@@ -117,11 +131,11 @@ static const char *kHashTagsTableViewHeightKey = "hashTagsTableViewHeightKey";
     
     //Add the controller to the current root view controller if it hasn't been added anywhere so far
     if(!controller.tableView.superview){
-        UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+//        UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
         
-        [controller willMoveToParentViewController:rootViewController];
-        [rootViewController.view addSubview:controller.view];
-        [controller didMoveToParentViewController:rootViewController];
+        [controller willMoveToParentViewController:self.parentViewController];
+        [self.parentViewController.view addSubview:controller.view];
+        [controller didMoveToParentViewController:self.parentViewController];
     }
     controller.view.hidden =  tags.count == 0;
     controller.hashTagsToDisplay = tags;

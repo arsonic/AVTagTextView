@@ -28,6 +28,7 @@
     //Set up the first text view with the default table view
     self.textView.delegate = self;
     self.textView.hashTagsDelegate = self;
+    self.textView.parentViewController = self;
     self.textView.hashTagsTableViewHeight = 120.;
     self.textView.keyboardType = UIKeyboardTypeTwitter;
     //Provide a custom implementation of the hash tags table view (optional)
